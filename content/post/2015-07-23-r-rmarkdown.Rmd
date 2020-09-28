@@ -185,4 +185,6 @@ Secondly, we might lack of considering the lucking variables, which may affect t
 Thirdly, the quality of the data for these two variables (Canadian education level and government satisfaction) are poor. The range of the data are too limited, we cannot fully observe these two variables. And limited data will lead to a biased results and the results would be not accurate. In future study, we can try to set a larger range of data, like from 1-100, and apply to the next survey. In addition, we can change education level to some more specific data, like GPA.
 
 Moreover, the distribution of people's education level and satisfaction of government is not a normal distribution, in which the data might affect our results.Next step, try qqplot to double check the normality and gather more future data(like 2020 data) to make it normal.
+
+
 # Part7. References
