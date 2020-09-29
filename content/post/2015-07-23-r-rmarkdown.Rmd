@@ -96,24 +96,24 @@ Center: The mean of education level for this dataset is 7.562, and the median of
 Spread: The standard deviation of education level for this dataset is 2.163563, the variance of education level for this dataset is 4.681006, and the interquartile range of education level for this dataset is 3.
 
 ```{r, warning=FALSE, message=FALSE}
-#edu_level <- as.data.frame(edu_level)
-#ggplot(data = edu_level, aes(x = edu_level)) +
-#  geom_histogram(col="black", fill="pink", bins = 20) + theme_classic() + 
-#  labs(title="Histogram of interviewer's education level")
+edu_level <- as.data.frame(edu_level)
+ggplot(data = edu_level, aes(x = edu_level)) +
+  geom_histogram(col="black", fill="pink", bins = 20) + theme_classic() + 
+  labs(title="Histogram of interviewer's education level")
 ```
 
 In this histogram of interviewer's education level, the distribution of the data is not symmetric. We see that the prominent peak lies to the right with the tail extending to the left, that means it is a left-skewed dataset. This variable interviewer's education level is not approximately normal. There are more than 1500 people that intend to rate more than 9 points to the government. Also it shows a few people with education level from -9 to -1.
 
 ```{r}
-#satisfaction <- phone2019_newsubset$government_satisfaction
+satisfaction <- phone2019_newsubset$government_satisfaction
 
-#summary(satisfaction)
-#satisfaction_standard_deviation <- sd(satisfaction)
-#satisfaction_standard_deviation
-#satisfaction_variance <- (satisfaction_standard_deviation)^2
-#satisfaction_variance
-#satisfaction_IQR <- IQR(satisfaction)
-#satisfaction_IQR
+summary(satisfaction)
+satisfaction_standard_deviation <- sd(satisfaction)
+satisfaction_standard_deviation
+satisfaction_variance <- (satisfaction_standard_deviation)^2
+satisfaction_variance
+satisfaction_IQR <- IQR(satisfaction)
+satisfaction_IQR
 ```
 
 As above, it shows the data summary of interviewer's satisfaction for the government performance. We see that the range of the satisfaction mark is from -9 to 4. 
@@ -122,10 +122,10 @@ Spread: The standard deviation of satisfaction for this dataset is .256297, the 
 
 
 ```{r, warning=FALSE, message=FALSE}
-#satisfaction <- as.data.frame(satisfaction)
-#ggplot(data = satisfaction, aes(x = '', y = satisfaction)) +
-#  geom_boxplot(col="black", fill="pink") + theme_classic() + 
-#  labs(title="Boxplot of interviewer's government satisfaction")
+satisfaction <- as.data.frame(satisfaction)
+ggplot(data = satisfaction, aes(x = '', y = satisfaction)) +
+  geom_boxplot(col="black", fill="pink") + theme_classic() + 
+  labs(title="Boxplot of interviewer's government satisfaction")
 ```
 
 From the box plot, we see that interviewer's satisfaction for the government is not normal distribution at all. Moreover, it does not show symmetric with a strongly right-skewed. That means most people's satisfaction to goverment is more than 0. There is two outliers in data, that means a group of people choose -9 and -8 in this survey. The median of satisfaction is 2, most of people rate the government from 1 to 4.
@@ -136,10 +136,10 @@ From the box plot, we see that interviewer's satisfaction for the government is 
 For the next step, we are interested in is there any relation between educational level and government satisfaction. So my explanatory variable is educational level and government satisfaction. Since in our daily life, highly educated people may have more opinions and comments to the government. Also, for people who with less education, they may ask the government for more beneficial policies to them and a better living environment. Those factors might be affect their satisfaction to government. If there is a relation between them, we can predict people's satisfaction to government by their education 
 
 ```{r}
-#combine_data <- cbind(edu_level, satisfaction)
-#combine_data <- as.data.frame(data)
+combine_data <- cbind(edu_level, satisfaction)
+combine_data <- as.data.frame(data)
 
-#scatter_plot <- plot(combine_data$satisfaction ~ combine_data$edu_level, xlab="Education Level", #ylab = "Satisfaction to Government", main = "Scatter Plot - Education Level and Satisfaction to Government")
+scatter_plot <- plot(combine_data$satisfaction ~ combine_data$edu_level, xlab="Education Level", ylab = "Satisfaction to Government", main = "Scatter Plot - Education Level and Satisfaction to Government")
 ```
 
 # Part4. Graph discussion
@@ -151,8 +151,8 @@ Firstly, from the scatter plot above we can observe that the distribution of the
 Since we want to find if there is a relation between interviewers' education level and their satisfaction to government.We fit an linear regression model and describe it.
 
 ```{r}
-#slr_model <- lm(formula = combine_data$satisfaction ~ combine_data$edu_level)
-#summary(slr_model)
+slr_model <- lm(formula = combine_data$satisfaction ~ combine_data$edu_level)
+summary(slr_model)
 ```
 
 The expected linear regression model between education level and satisfaction is $\hat{y_i} = 1.57613 + 0.07407{x_i}$, where $\hat{y_i}$ is the estimated satisfaction, and ${x_i}$ is education level.
