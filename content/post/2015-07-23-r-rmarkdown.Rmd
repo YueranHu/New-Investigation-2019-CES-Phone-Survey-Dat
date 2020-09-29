@@ -187,12 +187,14 @@ Moreover, the distribution of people's education level and satisfaction of gover
 
 # Part7. References
 
-- Stephenson, Laura B; Harell, Allison; Rubenson, Daniel; Loewen, Peter John, 2020, "2019 Canadian Election Study - Phone Survey", https://doi.org/10.7910/DVN/8RHLG1, Harvard Dataverse, V1
+# Part 8 Other resources
 
-- Paul A. Hodgetts and Rohan Alexander (2020). cesR: Access the CES Datasets a Little Easier.. R package version 0.1.0.
+Stephenson, Laura B; Harell, Allison; Rubenson, Daniel; Loewen, Peter John, 2020, "2019 Canadian Election Study - Phone Survey", https://doi.org/10.7910/DVN/8RHLG1, Harvard Dataverse, V1
 
-- Statistics Canada. "Education Indicators in Canada: An International Perspective 2018" (PDF). December 11, 2018. p. 32. Retrieved August 27, 2019.
+Paul A. Hodgetts and Rohan Alexander (2020). cesR: Access the CES Datasets a Little Easier.. R package version 0.1.0.
 
-- Conferenceboard (2020). Education Provincial Rankings - How Canada Performs. https://www.conferenceboard.ca/hcp/provincial/education.aspx
+Statistics Canada. "Education Indicators in Canada: An International Perspective 2018" (PDF). December 11, 2018. p. 32. Retrieved August 27, 2019.
 
-- Mario Canseco / Glacier Media (2020). Two-thirds of Canadians satisfied with federal government’s handling of COVID-19: poll. https://www.burnabynow.com/two-thirds-of-canadians-satisfied-with-federal-government-s-handling-of-covid-19-poll-1.24103683
+Conferenceboard (2020). Education Provincial Rankings - How Canada Performs. https://www.conferenceboard.ca/hcp/provincial/education.aspx
+
+Mario Canseco / Glacier Media (2020). Two-thirds of Canadians satisfied with federal government’s handling of COVID-19: poll. https://www.burnabynow.com/two-thirds-of-canadians-satisfied-with-federal-government-s-handling-of-covid-19-poll-1.24103683
